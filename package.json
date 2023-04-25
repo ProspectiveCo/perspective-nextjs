@@ -9,6 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@finos/perspective": "2.0.1",
+    "@finos/perspective-viewer": "2.0.1",
+    "@finos/perspective-viewer-d3fc": "2.0.1",
+    "@finos/perspective-viewer-datagrid": "2.0.1",
+    "@finos/perspective-webpack-plugin": "2.0.1",
     "@types/node": "18.16.0",
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.0",
@@ -19,6 +24,7 @@
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "stoppable": "^1.1.0",
     "tailwindcss": "3.3.1",
     "typescript": "5.0.4"
   }

@@ -24,4 +24,11 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+
+}
+
+
+perspective-viewer {
+    width: 1000px;
+    height: 600px;     
 }
