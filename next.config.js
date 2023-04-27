@@ -4,7 +4,7 @@ const PerspectivePlugin = require("@finos/perspective-webpack-plugin");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   webpack: (config, _) => {
     config.plugins.push(new PerspectivePlugin({ inlineWorker: true }));
     return config
