@@ -1,12 +1,14 @@
 const PerspectivePlugin = require("@finos/perspective-webpack-plugin");
 
-//{ buildId, dev, isServer, defaultLoaders, nextRuntime, webpack }
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   webpack: (config, _) => {
     config.plugins.push(new PerspectivePlugin({ inlineWorker: true }));
+    config.module.rules.push(   {
+      test: /\.arrow$/,
+      use: [{ loader: "arraybuffer-loader" }],
+    });
     return config
   },
 }
