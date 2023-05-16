@@ -14,8 +14,8 @@ export default function Home() {
             // @ts-ignore
             import("superstore-arrow/superstore.arrow"),
         ]).then(([_, __, ___, perspective, arr]) => {
-            const worker = perspective.default.worker();
-            const table = worker.table(arr.default);
+            const worker = perspective.default.shared_worker();
+            const table = worker.table(arr.default.slice());
             ref.current!.load(table);
         })
     }, [ref]);
